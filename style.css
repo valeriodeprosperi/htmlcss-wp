@@ -5,10 +5,23 @@
 }
 
 header{
+  position: relative;
   height:200px;
-  background-color: yellow;
+  background-color: green;
 }
 
+.container-logo{
+  position: absolute;
+  top: 50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  text-transform: uppercase;
+}
+.container-logo h1{
+  text-align: center;
+  width:
+  border: 5px solid white;
+}
 .container{
   width: 1000px;
   margin: auto;
