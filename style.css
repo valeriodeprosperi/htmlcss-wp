@@ -7,12 +7,14 @@
 header{
   position: relative;
   height:400px;
-  background-color: green;
+  background-image: url(img/natural-header.jpg);
+  border:10px solid red;
+
 }
 
-nav{
+.nav1{
   height: 80px;
-  background-color: grey;
+
 }
 .container-logo{
   position: absolute;
@@ -25,11 +27,13 @@ nav{
   text-align: center;
   display: block;
   border: 5px solid white;
+  color: white;
 
 }
 
 .container-logo h2{
   margin-top: 40px;
+  color: white;
 
 }
 .container{
@@ -65,6 +69,18 @@ main::after{
 
 }
 
+.listabox1{
+  list-style: none;
+}
+.container2{
+  height: 20px;
+  width:50px;
+}
+.fa-rss{
+  height:20px;
+  width:25;
+
+}
 .box1{
 float: left;
 width:29%;
