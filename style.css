@@ -74,6 +74,7 @@ main::after{
 
 .listabox1{
   list-style: none;
+  
 }
 .container2{
   display: inline-block;
@@ -90,12 +91,14 @@ float: left;
 width:29%;
 margin-right:1%;
 background-color: white;
+border-radius: 30px;
 }
 
 .box2{
   float: left;
   width:40%;
   background-color: white;
+  border-radius: 30px;
 }
 
 .box3{
@@ -103,17 +106,29 @@ background-color: white;
   width:29%;
   margin-left:1%;
   background-color: white;
+  border-radius: 30px;
 }
 .widget{
 
   margin-bottom: 5%;
   background-color: white;
+  border-radius: 30px;
+
 
 }
 
 
 footer{
-  height: 100px;
-  background-color: #A4D2E1;
+    height: 100px;
+    background-color: white;
+    clear: both;
+    border-radius: 30px;
+
+}
+
+.nomeautore{
+  color: lightgrey;
+  text-align:center;
+  border: 1px solid grey;
 
 }
