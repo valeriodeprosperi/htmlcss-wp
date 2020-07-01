@@ -3,7 +3,9 @@
   margin:0;
   padding:0;
 }
-
+body{
+  background-image: url(img/natural-background.png);
+}
 header{
   position: relative;
   height:400px;
@@ -73,6 +75,7 @@ main::after{
   list-style: none;
 }
 .container2{
+  display: inline-block;
   height: 20px;
   width:50px;
 }
