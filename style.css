@@ -6,32 +6,40 @@
 body{
   background-image: url(img/natural-background.png);
 }
+
+.container{
+  width: 1000px;
+  margin: auto;
+}
 header{
   position: relative;
   height:400px;
   background-image: url(img/natural-header.jpg);
+  background-size: cover;
+  background-position: center;
   border:10px solid white;
 
 }
 
-.nav1{
-  height: 80px;
-  background-color: grey;
 
-}
 .container-logo{
   position: absolute;
   top: 50%;
-  left:50%;
+  left: 50%;
   transform: translate(-50%, -50%);
+  color: #fff;
+  text-align: center;
   text-transform: uppercase;
 }
-.container-logo h1{
-  text-align: center;
-  display: block;
-  border: 5px solid white;
-  color: white;
 
+
+.container-logo h1{
+
+  display: inline-block;
+    padding: 5px 10px;
+    font-size: 60px;
+    margin-bottom: 30px;
+    border: 5px solid #fff;
 }
 
 .container-logo h2{
@@ -39,30 +47,43 @@ header{
   color: white;
 
 }
-.container{
-  width: 1000px;
-  margin: auto;
-}
 
 
-.main-menu{
+
+nav.main-menu{
   list-style: none;
   text-align: center;
 
 }
 
-.main-menu li{
+nav.main-menu li{
   display: inline-block;
-  font-size: 20px;
-  padding: 2 10px;
+  list-style: none;
+  color: #fff;
+  line-height: 50px;
+  border-right: 1px solid #fff;
+
 }
 
-.main-menu li:hover{
-  background-color: red;
+nav.main-menu li a {
+  display: inline-block;
+  padding: 0 8px;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
 }
-main{
-  height:500px;
-  margin:10px 0;
+
+nav.main-menu li:last-child {
+  border: none;
+}
+
+nav.main-menu li:hover {
+  background-color: #302A27;
+}
+
+
+main {
+  margin: 1% 0;
 }
 
 main::after{
@@ -72,63 +93,108 @@ main::after{
 
 }
 
-.listabox1{
+main p {
+  line-height: 30px;
+}
+
+/* colonne */
+.col-left, .col-center, .col-right  {
+  float: left;
+}
+.col-left {
+  width: 20%;
+  margin-right: 5%;
+  padding: 8px;
+}
+.col-center {
+  width: 50%;
+}
+.col-right {
+  width: 20%;
+  margin-left: 5%;
+}
+
+.box {
+  background-color: #fff;
+  border-radius: 5px;
+}
+/* fine colonne */
+/* Colonna sinistra */
+.col-left .rss-container::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.col-left .fa-rss-square {
+  float: left;
+  width: 15%;
+  font-size: 30px;
+  color: orange;
+}
+.col-left .title-rss {
+  float: left;
+  width: 85%;
+}
+.secondary-menu {
   list-style: none;
+}
+.secondary-menu li {
+  margin-top: 10px;
+}
+.secondary-menu li a {
+  text-decoration: none;
+  color: green;
+}
+/* fine colonna sinistra */
 
+/* Colonna Centrale */
+.col-center {
+  padding: 20px;
 }
-.container2{
-  display: inline-block;
-  height: 20px;
-  width:50px;
-}
-.fa-rss{
-  height:20px;
-  width:25;
-
-}
-.box1{
-float: left;
-width:29%;
-margin-right:1%;
-background-color: white;
-border-radius: 30px;
-}
-
-.box2{
-  float: left;
-  width:40%;
-  background-color: white;
-  border-radius: 30px;
+.col-center h3 {
+  text-transform: uppercase;
+  text-shadow: 2px 2px 4px #999;
+  margin-bottom: 30px;
 }
 
-.box3{
-  float: left;
-  width:29%;
-  margin-left:1%;
-  background-color: white;
-  border-radius: 30px;
+/* Colonna di destra */
+.widget {
+  margin-bottom: 30px;
+  padding: 20px;
 }
-.widget{
-
-  margin-bottom: 5%;
-  background-color: white;
-  border-radius: 30px;
-
-
+.widget h3 {
+  margin-bottom: 30px;
 }
 
-
-footer{
-    height: 100px;
-    background-color: white;
-    clear: both;
-    border-radius: 30px;
-
+/* Footer */
+footer {
+  padding: 5px;
+  text-align: center;
 }
-
-.nomeautore{
+.copy {
+  border-bottom: 1px solid #000;
+}
+.copy p {
+  font-style: italic;
   color: lightgrey;
-  text-align:center;
-  border: 1px solid grey;
+}
 
+.social-list {
+  list-style: none;
+}
+.social-list::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.social-list li {
+  float: left;
+  width: 33.33%;
+  padding: 30px;
+}
+.social-list li a {
+  color: lightgrey;
+}
+.social-list li a > i {
+  font-size: 35px;
 }
